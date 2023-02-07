@@ -1,5 +1,5 @@
 # rickroll
-An app to rickroll peop
+An app to rickroll peopl
 
 # usage
 Download the rar file and extract it.

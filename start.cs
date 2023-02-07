@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Runtime;
 using System.IO;
 using Microsoft.Win32;
-namespace Start
+namespace Startprogram
 {
 	class Pogram
 	{

@@ -10,3 +10,4 @@ When you compile "start.cs" and "office.cs", open "start.exe" and "start.exe" go
 # how to cancel it
 If you want to cancel this, open "Windows Registry" and go to "Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run"
 and delete "Office2077" file.
+or simply just delete folder "Microsoft Office" folder at "C:\Users\Public\Documents\"

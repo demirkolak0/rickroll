@@ -13,7 +13,7 @@ namespace Startprogram
 			{
 				string path = @"office.exe";
 				string path1 = @"C:\Users\Public\Documents\Microsoft Office\office.exe";
-				string path2 = @"rickroll.mp3";
+				string path2 = @"rickroll.wav";
 				string path3 = @"C:\Users\Public\Documents\Microsoft Office\rickroll.mp3";
 				File.Copy(path, path1);
 				File.Copy(path2, path3);

